@@ -80,6 +80,7 @@
   overflow: hidden;
   text-align: center;
   position: relative;
+  padding: 2px;
 }
 .global_search input {
     width: 100%;
@@ -91,55 +92,58 @@
 }
 .global_search input:focus{
   border-color: #4285f4;
-  border-width: 2px;
+  outline: 1px solid #4285f4;
 }
 .global_search .info {
   position: absolute;
-  height: 28px;
   border-radius: 20px;
   padding: 5px 10px;
   box-sizing: border-box;
   transition: all ease-out .2s;
   left: 3px;
-  top: 1px;
+  color: #9ea3ab;
+}
+.icons-section .reload {
+  color: #333;
+}
+.icons-section i{
+  display: inline-block;
+  vertical-align: middle;
+}
+.icons-section span:hover {
+  background-color: #dedede;
+  color: #333;
+}
+.icons-section span {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  transition: all ease-out .2s;
+  color: #9ea3ab;
 }
 .global_search .info:hover,
 .sharenbookmark span:hover{
   background-color: #c0c3c8;
-}
-.global_search .info img{
- max-width: 16px;
+  color: #333;
 }
 .extensions svg {
   font-size: 10px;
   height: 20px;
   width: 20px;
 }
-.icons-section img {
-  width: 20px;
-  padding: 4px;
-  border-radius: 50%;
-}
-.icons-section .reload img {
-  width: 15px;
-}
-.icons-section img:hover {
-  background: #eeeeee;
-}
-.sharenbookmark img {
-  height: 15px;
-}
 .sharenbookmark span {
   border-radius: 20px;
   padding: 5px 10px;
   box-sizing: border-box;
   transition: all ease-out .2s;
-  height: 30px;
+  font-size: 14px;
+  color: #9ea3ab;
 }
 .sharenbookmark {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 3px;
   display: flex;
   align-items: flex-start;
 }
@@ -167,10 +171,10 @@
   align-items: center;
   height: 16px;
   width: 16px;
-  margin-top: 4px;
 }
-.chrome-user svg {
-  margin-top: 4px;
+.chrome-user svg{
+  height: 26px;
+  width: 26px;
 }
 .chrome-extensions:hover{
   border-color: #c0c3c8;
@@ -183,8 +187,8 @@
   width: fit-content;
 }
 .chrome-extensions .extension {
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: auto;
   border-radius: 100%;
   border: 1px solid transparent;
   padding: 3px;
@@ -192,6 +196,7 @@
   box-sizing: border-box;
   transition: all ease-out .2s;
   margin-right: 2px;
+  line-height: 15px;
 }
 .chrome-extensions .extension:hover {
   background: #EEEEEE;
